@@ -3,17 +3,16 @@ module LibLoad (runModule) where
 import Lib (Part, Text)
 import qualified Aoc01
 import qualified Aoc02
-import qualified Aoc03
-import qualified Aoc04
-import qualified Aoc05
-import qualified Aoc06
-import qualified Aoc07
-import qualified Aoc08
-import qualified Aoc09
-import qualified Aoc10
+-- import qualified Aoc03
+-- import qualified Aoc04
+-- import qualified Aoc05
+-- import qualified Aoc06
+-- import qualified Aoc07
+-- import qualified Aoc08
+-- import qualified Aoc09
+-- import qualified Aoc10
 -- import qualified Aoc11
 -- import qualified Aoc12
-import qualified AocDay
 
 runModule :: String -> Part -> Bool -> Text -> IO ()
 runModule day p s = case day of 
