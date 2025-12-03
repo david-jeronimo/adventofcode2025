@@ -3,7 +3,7 @@ module LibLoad (runModule) where
 import Lib (Part, Text)
 import qualified Aoc01
 import qualified Aoc02
--- import qualified Aoc03
+import qualified Aoc03
 -- import qualified Aoc04
 -- import qualified Aoc05
 -- import qualified Aoc06
@@ -18,7 +18,7 @@ runModule :: String -> Part -> Bool -> Text -> IO ()
 runModule day p s = case day of 
           "01" -> print . Aoc01.solution p s . Aoc01.parseInput
           "02" -> print . Aoc02.solution p s . Aoc02.parseInput
-        --   "03" -> print . Aoc03.solution p s . Aoc03.parseInput
+          "03" -> print . Aoc03.solution p s . Aoc03.parseInput
         --   "04" -> print . Aoc04.solution p s . Aoc04.parseInput
         --   "05" -> print . Aoc05.solution p s . Aoc05.parseInput
         --   "06" -> print . Aoc06.solution p s . Aoc06.parseInput
