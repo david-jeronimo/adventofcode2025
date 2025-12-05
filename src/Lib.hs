@@ -8,6 +8,7 @@ module Lib
   ( Part (..),
     Text,
     readInput,
+    toTuple2
   )
 where
 
@@ -21,3 +22,7 @@ readInput parse file = do
   l <- TIO.readFile file
   let input = parse l
   return input
+
+toTuple2 :: [a] -> Maybe (a,a)
+toTuple2 [a,b] = Just (a,b)
+toTuple2 _ = Nothing

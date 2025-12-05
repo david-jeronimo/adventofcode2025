@@ -5,7 +5,7 @@ import qualified Aoc01
 import qualified Aoc02
 import qualified Aoc03
 import qualified Aoc04
--- import qualified Aoc05
+import qualified Aoc05
 -- import qualified Aoc06
 -- import qualified Aoc07
 -- import qualified Aoc08
@@ -20,7 +20,7 @@ runModule day p s = case day of
           "02" -> print . Aoc02.solution p s . Aoc02.parseInput
           "03" -> print . Aoc03.solution p s . Aoc03.parseInput
           "04" -> print . Aoc04.solution p s . Aoc04.parseInput
-        --   "05" -> print . Aoc05.solution p s . Aoc05.parseInput
+          "05" -> print . Aoc05.solution p s . Aoc05.parseInput
         --   "06" -> print . Aoc06.solution p s . Aoc06.parseInput
         --   "07" -> print . Aoc07.solution p s . Aoc07.parseInput
         --   "08" -> print . Aoc08.solution p s . Aoc08.parseInput
